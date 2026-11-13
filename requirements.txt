@@ -1,0 +1,18 @@
+# The packages this project uses. The Codespace installs them when it's created.
+# Need another one? Add a line here, then run `pip install --user -r requirements.txt` in a terminal.
+pandas>=3.0
+numpy
+openpyxl
+pyarrow
+lxml
+beautifulsoup4
+requests
+requests-cache
+charset-normalizer
+python-dotenv
+tabulate
+matplotlib
+seaborn
+ipykernel
+nbconvert
+nbdime
