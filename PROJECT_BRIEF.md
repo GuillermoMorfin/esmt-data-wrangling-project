@@ -7,6 +7,7 @@ The group project is worth 30% of the module grade. It has three parts.
 | part | weight | when |
 |---|---|---|
 | Checkpoint | 5% | due Monday 16 November at 09:00 |
+
 | Presentation | 10% | in class on Thursday 19 November |
 | Code | 15% | due Friday 20 November at 18:00 |
 
