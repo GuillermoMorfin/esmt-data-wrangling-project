@@ -6,28 +6,34 @@
 
 | name | GitHub username |
 |---|---|
-|Peter Vajda |peteravajda-gif |
-| | |
-| | |
-| | |
+|Alyan Ahmed|alyan-01|
+|Peter Vadja|peteravajda-gif|
+|Guillermo Morfin Guerrero |GuillermoMorfin |
+|Julian Pabon|Jupabon |
 
 ## Question
 
-What do you want to find out?
+Did share prices beat inflation between 2014 and 2024, and in which countries?
 
-From which online marketplaces should you buy your next iPhone in Germany?
+A share index that goes up 50% sounds good, but if prices in the shops went up 60% over the same years, investors lost money in real terms.
+We want to compare the growth of each country's share price index with the rise in its consumer prices, for every country where we can
+get both.
 
 ## Sources
 
 | source | link | API, file or web page |
 |---|---|---|
-| Kleinanzeigen Agent – second-hand iPhone listings | [API documentation](https://kleinanzeigen-agent.de/dokumentation) | API |
-| eBay Germany | [Example listings](https://www.ebay.de/b/Apple-iPhone-13-128GB/9355/bn_7117856204) | Web page |
-| Quoka Germany | [Example listings](https://www.quoka.de/anzeigen/?commercial=false&q=iphone+13) | Web page |
+| OECD Data Explorer, *Financial market* dataset (yearly share price index per country) | [https://sdmx.oecd.org/public/rest/data/OECD.SDD.STES,DSD_STES@DF_FINMARK/.A.SHARE......?startPeriod=2014&endPeriod=2024&format=csvfile](https://sdmx.oecd.org/public/rest/data/OECD.SDD.STES,DSD_STES@DF_FINMARK/.A.SHARE......?startPeriod=2014&endPeriod=2024&format=csvfile) | API (parameters for country, frequency, measure and years) |
+| World Bank Indicators, *Inflation, consumer prices (annual %)*, `FP.CPI.TOTL.ZG` | https://api.worldbank.org/v2/country/all/indicator/FP.CPI.TOTL.ZG | API (parameters and pages) |
+| Wikipedia, ISO 3166-1 table of country codes | https://en.wikipedia.org/wiki/ISO_3166-1 | web page |
 
+The three sources come from three organisations (OECD, World Bank, Wikimedia).
 
 ## Joining the sources
 
-What do your sources have in common that you can join them on? It could be a date, a country code or a place.
+All three have the ISO three-letter country code (`DEU`, `GBR`, ...). The OECD calls it `REF_AREA`, the World Bank `countryiso3code` and
+Wikipedia "Alpha-3 code".
 
-We will join the three sources on iPhone model and storage capacity. For example, an iPhone 15 with 256 GB of storage is the same configuration on Kleinanzeigen, eBay, and Quoka. We will standardize model names and storage units, calculate the mean and median asking price for each configuration on each platform, and then join those summaries to compare prices side by side.
+- Share prices and inflation are joined on **country code and year**.
+- Both APIs also return groups of countries (for example "Euro area", "OECD", "World"). The Wikipedia table is the list of real countries,
+  so we use it to keep only codes that are countries.
