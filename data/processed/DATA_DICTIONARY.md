@@ -1,0 +1,18 @@
+# Data dictionary
+
+Two tables in `data/processed/`. `shares_and_inflation.parquet` has one row per country and year. `real_returns.parquet` has one row per country.
+
+| table                | column              | type         | meaning                                                                                             | source     |
+|:---------------------|:--------------------|:-------------|:----------------------------------------------------------------------------------------------------|:-----------|
+| shares_and_inflation | country_code        | text         | ISO 3166-1 three-letter country code                                                                | OECD       |
+| shares_and_inflation | alpha2              | text         | ISO 3166-1 two-letter country code                                                                  | Wikipedia  |
+| shares_and_inflation | country             | text         | country name                                                                                        | World Bank |
+| shares_and_inflation | year                | whole number | calendar year, 2014 to 2024                                                                         | OECD       |
+| shares_and_inflation | share_price_index   | number       | average level of the country's share price index in that year, in local currency, without dividends | OECD       |
+| shares_and_inflation | inflation_pct       | number       | consumer price inflation in that year, in percent                                                   | World Bank |
+| real_returns         | country_code        | text         | ISO 3166-1 three-letter country code                                                                | OECD       |
+| real_returns         | country             | text         | country name                                                                                        | World Bank |
+| real_returns         | share_growth_pct    | number       | change of the share price index from 2014 to 2024, in percent                                       | calculated |
+| real_returns         | inflation_total_pct | number       | rise in consumer prices from 2014 to 2024, in percent                                               | calculated |
+| real_returns         | real_return_pct     | number       | share price growth after inflation, in percent                                                      | calculated |
+| real_returns         | beat_inflation      | true/false   | True if real_return_pct is above zero                                                               | calculated |
