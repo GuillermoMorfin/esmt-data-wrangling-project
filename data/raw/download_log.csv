@@ -1,0 +1,6 @@
+source,file,url,outcome,checked_on
+OECD,oecd_share_prices.csv,"https://sdmx.oecd.org/public/rest/data/OECD.SDD.STES,DSD_STES@DF_FINMARK/.A.SHARE......",downloaded,2026-11-16
+World Bank,worldbank_inflation_page_01.json,https://api.worldbank.org/v2/country/all/indicator/FP.CPI.TOTL.ZG?page=1,downloaded,2026-11-16
+World Bank,worldbank_inflation_page_02.json,https://api.worldbank.org/v2/country/all/indicator/FP.CPI.TOTL.ZG?page=2,downloaded,2026-11-16
+World Bank,worldbank_inflation_page_03.json,https://api.worldbank.org/v2/country/all/indicator/FP.CPI.TOTL.ZG?page=3,downloaded,2026-11-16
+Wikipedia,wikipedia_iso_3166_1.html,https://en.wikipedia.org/wiki/ISO_3166-1,downloaded,2026-11-16
