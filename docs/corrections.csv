@@ -1,1 +1,3 @@
 country_code,rule,action,reason
+TUR,inflation between -2% and 25%,kept,"3 year(s) outside the range, highest 72.3%. Checked against the World Bank website, the values are real."
+TUR,yearly index change between -60% and +100%,kept,"large change in a high inflation country, the index is in local currency so prices rise with inflation"
