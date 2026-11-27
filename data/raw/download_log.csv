@@ -1,6 +1,6 @@
-source,file,url,outcome,checked_on
-OECD,oecd_share_prices.csv,"https://sdmx.oecd.org/public/rest/data/OECD.SDD.STES,DSD_STES@DF_FINMARK/.A.SHARE......",already in data/raw,2026-11-17
-World Bank,worldbank_inflation_page_01.json,https://api.worldbank.org/v2/country/all/indicator/FP.CPI.TOTL.ZG?page=1,already in data/raw,2026-11-17
-World Bank,worldbank_inflation_page_02.json,https://api.worldbank.org/v2/country/all/indicator/FP.CPI.TOTL.ZG?page=2,already in data/raw,2026-11-17
-World Bank,worldbank_inflation_page_03.json,https://api.worldbank.org/v2/country/all/indicator/FP.CPI.TOTL.ZG?page=3,already in data/raw,2026-11-17
-Wikipedia,wikipedia_iso_3166_1.html,https://en.wikipedia.org/wiki/ISO_3166-1,already in data/raw,2026-11-17
+source,file,url,status,bytes,downloaded_at_utc,note
+OECD,oecd_share_prices.csv,"https://sdmx.oecd.org/public/rest/data/OECD.SDD.STES,DSD_STES@DF_FINMARK/.A.SHARE......?startPeriod=2014&endPeriod=2024&format=csvfile",,49524,2026-11-16 16:25:01,"downloaded before the log recorded times and sizes; time is when the file was first committed to git (commit a797ea8), size is the file as committed"
+World Bank,worldbank_inflation_page_01.json,https://api.worldbank.org/v2/country/all/indicator/FP.CPI.TOTL.ZG?format=json&date=2014%3A2024&per_page=1000&page=1,,237345,2026-11-16 16:25:01,"downloaded before the log recorded times and sizes; time is when the file was first committed to git (commit a797ea8), size is the file as committed"
+World Bank,worldbank_inflation_page_02.json,https://api.worldbank.org/v2/country/all/indicator/FP.CPI.TOTL.ZG?format=json&date=2014%3A2024&per_page=1000&page=2,,227300,2026-11-16 16:25:01,"downloaded before the log recorded times and sizes; time is when the file was first committed to git (commit a797ea8), size is the file as committed"
+World Bank,worldbank_inflation_page_03.json,https://api.worldbank.org/v2/country/all/indicator/FP.CPI.TOTL.ZG?format=json&date=2014%3A2024&per_page=1000&page=3,,212122,2026-11-16 16:25:01,"downloaded before the log recorded times and sizes; time is when the file was first committed to git (commit a797ea8), size is the file as committed"
+Wikipedia,wikipedia_iso_3166_1.html,https://en.wikipedia.org/wiki/ISO_3166-1,,1031413,2026-11-16 16:25:01,"downloaded before the log recorded times and sizes; time is when the file was first committed to git (commit a797ea8), size is the file as committed"
