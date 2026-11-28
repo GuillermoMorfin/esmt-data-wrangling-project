@@ -60,19 +60,3 @@ downloaded by hand. Every download is recorded in `data/raw/download_log.csv` wi
   - a share index rise of more than 100% in a year is only accepted when inflation that year was above 10% (this flags Türkiye in 2023,
     which is kept, with the reason in `docs/corrections.csv`).
 
-## After grading
-
-This repository is Guillermo Morfin's copy of our group project. The version that was graded is commit `5f4bcae` (18 November 2026).
-The cleaning log was completed shortly after the deadline (commit `632ad45`), so it wasn't part of the graded version. After the course
-I fixed the issues raised in the instructor's feedback:
-
-- wrote the answer and the countries covered into this README;
-- made the download log keep every real download with its time, size and status, instead of rebuilding it on each run (the files
-  downloaded before this change were backfilled from the git history, as the log's `note` column says);
-- turned the key checks before the merges into `assert`s;
-- added validation rules that compare columns and sources;
-- recorded the removal of country groups in `docs/corrections.csv`;
-- corrected the unit of the share price index (an index with 2015 = 100, not local currency) in the data dictionary and the cleaning
-  log.
-
-The results did not change: the final tables are identical to the graded version.
